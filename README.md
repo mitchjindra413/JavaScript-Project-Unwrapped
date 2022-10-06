@@ -16,7 +16,8 @@ In addition, this project will include:
 - AJAX usage to create SPA 
 
 ## Wireframe
-![Screen Shot 2022-10-06 at 12 25 02 PM](https://user-images.githubusercontent.com/65314998/194401293-01fcacfe-c58b-4121-81e3-2aae0d7ea492.png)
+<img width="813" alt="Screen Shot 2022-10-06 at 2 08 41 PM" src="https://user-images.githubusercontent.com/65314998/194419203-a24ebc84-06e7-4bef-8b2b-b2410ebe1a11.png">
+
 
 ## Technologies, Libraries, and APIs
 - Spotify API
