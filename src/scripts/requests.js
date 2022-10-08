@@ -10,15 +10,15 @@ function generateTopUserRequestUrl(type, length, time) {
     return url;
 }
 
-// time can be: long_term, medium_term, short_term
-// "https://api.spotify.com/v1/me/shows?offset=0&limit=20\n"
+// https://api.spotify.com/v1/me/top/song?limit=50&time_range=long_term
 
-function recieveTopRequest(){
+export function recieveTopRequest(){
     // let time = some data aspect of the li 
+    console.log(token)
     const total_data = {};
     let length = ['short_term', 'medium_term', 'long_term']
-    for(let time in length) {
-        fetch(generateTopUserRequestUrl('song', '50', time), {
+    for(let time of length) {
+        fetch(generateTopUserRequestUrl('tracks', '50', time), {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
@@ -27,11 +27,12 @@ function recieveTopRequest(){
             }
         })
             .then((response) => {
-                console.log(response);
+                let converted = response.json()
+                console.log(converted);
                 // push to total_data
             });
 
-        fetch(generateTopUserRequestUrl('artist', '50', time), {
+        fetch(generateTopUserRequestUrl('artists', '50', time), {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
@@ -40,9 +41,11 @@ function recieveTopRequest(){
             }
         })
             .then((response) => {
-                console.log(response);
+                let converted = response.json()
+                console.log(converted);
             });
     }
     
 }
+
 
