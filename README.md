@@ -16,21 +16,17 @@ In addition, this project will include:
 - AJAX usage to create SPA 
 
 ## Wireframe
-<img width="813" alt="Screen Shot 2022-10-06 at 2 08 41 PM" src="https://user-images.githubusercontent.com/65314998/194419203-a24ebc84-06e7-4bef-8b2b-b2410ebe1a11.png">
-
+<img width="814" alt="Screen Shot 2022-10-07 at 2 56 32 PM" src="https://user-images.githubusercontent.com/65314998/194688627-124bfcfc-6cbc-42da-8bb6-9b78ce7ca54a.png">
 
 ## Technologies, Libraries, and APIs
 - Spotify API
-- D3
 
 ## Implementation Timeline
 Friday: Be able to retreieve data from a specific user from Spotify API  
+
 Weekend: Formulate how to parse through retrieved data and create labels for retrieved data  
 Monday: Slide Show Development  
 Tuesday: Dashboard development with D3 library  
 Wednesday: CSS Styling  
 Thursday: CSS Styling / Deploment  
 
-## Backend
-Developed to store API key?  
-CORS Proxy?
