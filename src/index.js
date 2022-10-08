@@ -1,5 +1,5 @@
 import { auth_url } from './scripts/authorization'
-import { recieveTopRequest } from './scripts/requests'
+import { recieveRequest } from './scripts/requests'
 
 document.addEventListener("DOMContentLoaded", () => {
     if (!window.location.hash.includes('access_token')){
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     let short = document.querySelector('#short_bttn')
-    short.addEventListener("click", recieveTopRequest)
+    short.addEventListener("click", recieveRequest)
 })
 
 

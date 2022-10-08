@@ -1,7 +1,7 @@
 const key = window.location.hash
 const token = key.slice(key.indexOf("=") + 1, key.indexOf("&"))
 
-function generateTopUserRequestUrl(type, length, time) { 
+function generateRequestUrl(type, length, time) { 
     let url = 'https://api.spotify.com/v1/me/top';
     url += '/' + type;
     url += '?limit=' + length;
@@ -12,13 +12,12 @@ function generateTopUserRequestUrl(type, length, time) {
 
 // https://api.spotify.com/v1/me/top/song?limit=50&time_range=long_term
 
-export function recieveTopRequest(){
-    // let time = some data aspect of the li 
-    console.log(token)
+export async function recieveRequest(){
+
     const total_data = {};
     let length = ['short_term', 'medium_term', 'long_term']
     for(let time of length) {
-        fetch(generateTopUserRequestUrl('tracks', '50', time), {
+        const response = await fetch(generateRequestUrl('tracks', '50', time), {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
@@ -26,13 +25,12 @@ export function recieveTopRequest(){
                 'Authorization': 'Bearer ' + token
             }
         })
-            .then((response) => {
-                let converted = response.json()
-                console.log(converted);
-                // push to total_data
-            });
+        const data = await response.json()
+            
+        total_data[`tracks_${time}`] = data.items
+            
 
-        fetch(generateTopUserRequestUrl('artists', '50', time), {
+        const response2 = await fetch(generateRequestUrl('artists', '50', time), {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
@@ -40,12 +38,15 @@ export function recieveTopRequest(){
                 'Authorization': 'Bearer ' + token
             }
         })
-            .then((response) => {
-                let converted = response.json()
-                console.log(converted);
-            });
-    }
+        const data2 = await response2.json()
+
+        total_data[`artists_${time}`] = data2.items
+    };
+
     
+    const tds = JSON.stringify(total_data)
+    console.log(tds);
+    sessionStorage.setItem('total_data', tds);
+    return total_data;
 }
-
 
