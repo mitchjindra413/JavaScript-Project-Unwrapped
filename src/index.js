@@ -14,9 +14,17 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector('#login').style.display = "none"
     }
 
-    let short = document.querySelector('#short_bttn')
-    short.addEventListener("click", recieveRequest)
+    queryButton()
 })
+
+function queryButton() {
+    let button = document.querySelector('.request_bttn')
+    if (sessionStorage.getItem('total_data') === null){
+        button.addEventListener("click", recieveRequest)
+    }
+    
+}
+
 
 
 
