@@ -1,3 +1,8 @@
+body {
+    background-color: black;
+    margin: 2%;
+}
+
 .login_bttn {
     background-color: #4b917d;
     border: 4px solid black;
@@ -19,3 +24,39 @@
     color: #4b917d;
 }
 
+footer {
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 200;
+    margin: 2%;
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer button {
+    text-decoration: underline;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+}
+
+.footer_links {
+    display: flex;
+}
+.footer_links a {
+    padding: 10px;
+}
+
+
+footer button:hover {
+    color: #f037a5;
+}
+
+hr {
+    color: white;
+    margin: 2%;
+    background-color: white;
+}

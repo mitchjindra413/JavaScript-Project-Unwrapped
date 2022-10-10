@@ -53,10 +53,10 @@ export const Util = {
             if (parse[typeTime][i].popularity > obscure) {
                 obscure = parse[typeTime][i].popularity;
                 name = parse[typeTime][i].name;
-                picUrl = parse[typeTime][i].images[0];
+                picUrl = parse[typeTime][i].images[0].url;
             }
         }
 
-        return [name, obscure];
+        return [name, picUrl, obscure];
     }
 }

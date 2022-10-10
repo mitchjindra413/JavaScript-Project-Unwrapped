@@ -27,7 +27,9 @@ function queryButton() {
         button.addEventListener("click", recieveRequest())
     }
     
+    
 }
+
 
 
 
