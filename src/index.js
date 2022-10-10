@@ -1,5 +1,6 @@
 import { auth_url } from './scripts/authorization'
 import { recieveRequest } from './scripts/requests'
+import { Util } from './scripts/util'
 
 document.addEventListener("DOMContentLoaded", () => {
     if (!window.location.hash.includes('access_token')){
@@ -14,7 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
         queryButton()
     }
 
-    
+    console.log(Util.topArtist('artists_long_term', 5));
+    console.log(Util.topTracks('tracks_long_term', 5));
+    console.log(Util.topGenres('artists_long_term', 5))
+    console.log(Util.mostObscure('artists_long_term'))
 })
 
 function queryButton() {
