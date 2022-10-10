@@ -1,0 +1,6 @@
+Colors:
+- Black
+- White
+- inchworm green: cdf564
+- frostbite pink: f037a5
+- illum emerald teal: 4b917d

@@ -7,7 +7,7 @@ h2,p,form,
 fieldset,label,input,
 textarea,span,article,
 footer,time,small {
-    margin: 0;
+    margin: 10px;
     padding: 0;
     border: 0;
     outline: 0;

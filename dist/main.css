@@ -10,7 +10,7 @@ h2,p,form,
 fieldset,label,input,
 textarea,span,article,
 footer,time,small {
-    margin: 0;
+    margin: 10px;
     padding: 0;
     border: 0;
     outline: 0;
@@ -59,11 +59,91 @@ button,
 input[type="submit"] {
     cursor: pointer;
 }
-/*!*********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/background.css ***!
-  \*********************************************************************************************************/
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/after_login.css ***!
+  \**********************************************************************************************************/
 body {
+    background-color: black;
+
+}
+
+h1 {
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 50px; 
+    font-weight: 700;
+}
+
+.wrapped {
+    color: #cdf564;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 750%;
+    font-weight: 700;
+    display: flex;
+    justify-content: right;
+    width: fit-content;
+}
+
+#when {
+    color:#f037a5 ;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    font-size: 600%;
+    display: flex;
+    justify-content: right;
+    text-decoration: underline;
+}
+
+.slide_bttns {
+    display: flex;
+    justify-content: right;
+}
+
+.request_bttn {
     background-color: #cdf564;
+    border: 4px solid black;
+    color: black;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: larger;
+}
+
+.request_bttn:hover {
+    background-color: black;
+    border: 4px solid #cdf564;
+    color: #cdf564;
+}
+
+.albums_front {
+    position: relative;
+    right: 25%;
+    height: 200px;
+    width: 200px;
+}
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/before_login.css ***!
+  \***********************************************************************************************************/
+.login_bttn {
+    background-color: #4b917d;
+    border: 4px solid black;
+    color: black;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: larger;
+}
+
+.login_bttn:hover {
+    background-color: black;
+    color: #4b917d;
+    border: 4px solid #4b917d;
+}
+
+#login_p1 {
+    color: #4b917d;
 }
 
 
