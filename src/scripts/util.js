@@ -58,5 +58,11 @@ export const Util = {
         }
 
         return [name, picUrl, obscure];
+    },
+
+    randomColor() {
+        const colors = ['#f037a5', '#cdf564']
+        let randIndex = Math.floor(Math.random()*2)
+        return colors[randIndex]
     }
 }
