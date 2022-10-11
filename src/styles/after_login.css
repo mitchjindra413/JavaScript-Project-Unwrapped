@@ -1,14 +1,13 @@
 
 #logged_in {
-    padding-top: 2%;
+    padding-top: 5%;
 }
 .wrapped {
     color: #cdf564;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 100px;
     font-weight: 700;
-    display: flex;
-    justify-content: left;
+    
 }
 
 #when {

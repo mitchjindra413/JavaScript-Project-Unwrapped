@@ -64,15 +64,14 @@ input[type="submit"] {
   \**********************************************************************************************************/
 
 #logged_in {
-    padding-top: 2%;
+    padding-top: 5%;
 }
 .wrapped {
     color: #cdf564;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 100px;
     font-weight: 700;
-    display: flex;
-    justify-content: left;
+    
 }
 
 #when {
@@ -210,6 +209,12 @@ hr {
     color: white;
     margin: 2%;
     background-color: white;
+}
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/slides.css ***!
+  \*****************************************************************************************************/
+.slide {
+    background-color: cdf564;
 }
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!

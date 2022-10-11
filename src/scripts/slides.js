@@ -1,36 +1,41 @@
 import {Util} from './util'
-class Slides {
-    constructor(typeTime){
-        this.createSlideTrack(typeTime)
-        this.createSlideArtist(typeTime)
-        this.createSlideGenre(typeTime)
+
+export class Slides {
+    constructor(trackTime, artistTime){
+        this.createSlideTrack(trackTime);
+        this.createSlideArtist(artistTime);
+        this.createSlideGenre(artistTime);
+        this.createSlideObscure(artistTime)
     }
 
     createSlideArtist(typeTime) {
     const queryResults = Util.topArtist(typeTime, 5);
 
-    let artistDiv = document.querySelector('#topArtists');
-    artistDiv.h2.innerHTML = ``
-
-    for (i = 0; i < 9; i++) {
+    let h2 = document.querySelector('#topArtists_h2');
+    h2.innerHTML = "Funny sentence"
+    
+    let figure = document.querySelector('#artist_grid')
+    for (let i = 0; i < 9; i++) {
         let img = document.createElement('img');
         img.src = queryResults[0][1];
-        artistDiv.figure.append(img);
+        figure.append(img);
     }
 
+    let ul = document.querySelector('#topArtists_ul')
     for (let artist of queryResults) {
         let li = document.createElement('li');
         li.innerHTML = `${artist[0]}`;
-        artistDiv.ul.append(li);
+        ul.append(li);
     }
 }
 
     createSlideTrack(typeTime) {
         const queryResults = Util.topTracks(typeTime, 5);
 
-        let artistDiv = document.querySelector('#topTracks');
-        artistDiv.h2.innerHTML = `Top Tracks of $ { }`;
+        let track_h2 = document.querySelector('#topTracks_h2');
+        track_h2.innerHTML = 'Top Tracks for $ { }';
 
+        let figure = document.querySelector('#topTracks_figure')
         for (let track of queryResults) {
             let div = document.createElement('div');
             let p = document.createElement('p');
@@ -40,15 +45,39 @@ class Slides {
 
             div.append(img);
             div.append(p)
-            artistDiv.figure.append(div);
+            figure.append(div);
         }
     }
 
     createSlideGenre(typeTime) {
         const queryResults = Util.topGenres(typeTime, 5);
 
-        for(i = 0; i < 5; i++){
-            
+        let h2 = document.querySelector('#topGenres_h2');
+        h2.innerHTML = `Top Genres for $ { }`;
+
+        let ul = document.querySelector('#topGenres_ul');
+        for(let i = 0; i < 5; i++){
+            let li = document.createElement('li');
+            li.innerHTML = queryResults[i][0];
+            ul.append(li)
+        }
+    }
+
+    createSlideObscure(typeTime) {
+        const queryResults = Util.mostObscure(typeTime);
+
+        let h2 = document.querySelector('#mostObscure_h2');
+        h2.innerHTML = `Most Obscure Artist`;
+
+        let h3 = document.querySelector('#mostObscure_h3');
+        h3.innerHTML = queryResults[0];
+
+        let img = document.createElement('img');
+        img.src = queryResults[1];
+
+        let div = document.querySelector('#obscure_imgs')
+        for(let i=0; i < 3; i++){
+            obscureDiv.div.append(img)
         }
     }
 }
