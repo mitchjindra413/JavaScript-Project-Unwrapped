@@ -13,6 +13,11 @@
     justify-content: space-around;
 }
 
+#topTracks_figure p{
+    display: flex;
+    justify-content: center;
+}
+
 #topTracks img {
     height: 200px;
     width: 200px;

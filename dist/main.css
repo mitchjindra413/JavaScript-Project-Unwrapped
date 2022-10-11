@@ -1,6 +1,3 @@
-/*!****************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/reset.css ***!
-  \****************************************************************************************************/
 html,body,header,
 nav,h1,a,
 ul,li,strong,
@@ -59,9 +56,6 @@ button,
 input[type="submit"] {
     cursor: pointer;
 }
-/*!**********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/after_login.css ***!
-  \**********************************************************************************************************/
 
 
 .wrapped {
@@ -111,9 +105,6 @@ input[type="submit"] {
     width: 200px;
     display: inline;
 }
-/*!***********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/before_login.css ***!
-  \***********************************************************************************************************/
 h1 {
     color: white;
     font-family: 'Lexend Deca', sans-serif;
@@ -209,9 +200,6 @@ hr {
     margin: 2%;
     background-color: white;
 }
-/*!*****************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/slides.css ***!
-  \*****************************************************************************************************/
 .slide {
     background-color: cdf564;
     border-radius: 25px;
@@ -225,6 +213,11 @@ hr {
 #topTracks_figure {
     display: flex;
     justify-content: space-around;
+}
+
+#topTracks_figure p{
+    display: flex;
+    justify-content: center;
 }
 
 #topTracks img {
@@ -266,7 +259,6 @@ hr {
 #mostObscure {
     display: none;
 } */
-/*!*************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
-  \*************************************************************************************************************************************/
 
+
+/*# sourceMappingURL=main.css.map*/
