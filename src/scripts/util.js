@@ -14,7 +14,7 @@ export const Util = {
         const parse = JSON.parse(sessionStorage.total_data)
         let titlesArtistArtwork = [];
         for (let i = 0; i < limit; i++) {
-            titlesArtistArtwork.push([parse[typeTime][i].name, parse[typeTime][i].artists[0].name, parse[typeTime][0].album.images[0].url]);
+            titlesArtistArtwork.push([parse[typeTime][i].name, parse[typeTime][i].artists[0].name, parse[typeTime][i].album.images[0].url]);
         }
 
         return titlesArtistArtwork;

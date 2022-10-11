@@ -3,6 +3,7 @@ h1 {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 40px;
     font-weight: 700;
+    padding-bottom: 5%;
 }
 
 body {
@@ -34,7 +35,7 @@ justify-content: left;
 }
 
 #open {
-    padding-top: 5%;
+    /* padding-top: 5%; */
     font-family: 'Lexend Deca', sans-serif;
 }
 

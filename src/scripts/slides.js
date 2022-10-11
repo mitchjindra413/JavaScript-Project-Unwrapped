@@ -40,7 +40,7 @@ export class Slides {
             let div = document.createElement('div');
             let p = document.createElement('p');
             let img = document.createElement('img');
-            img.src = track[1];
+            img.src = track[2];
             p.innerHTML = track[0];
 
             div.append(img);
@@ -65,7 +65,7 @@ export class Slides {
 
     createSlideObscure(typeTime) {
         const queryResults = Util.mostObscure(typeTime);
-
+        
         let h2 = document.querySelector('#mostObscure_h2');
         h2.innerHTML = `Most Obscure Artist`;
 
@@ -77,7 +77,7 @@ export class Slides {
 
         let div = document.querySelector('#obscure_imgs')
         for(let i=0; i < 3; i++){
-            obscureDiv.div.append(img)
+            div.append(img)
         }
     }
 }

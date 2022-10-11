@@ -63,9 +63,7 @@ input[type="submit"] {
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/after_login.css ***!
   \**********************************************************************************************************/
 
-#logged_in {
-    padding-top: 5%;
-}
+
 .wrapped {
     color: #cdf564;
     font-family: 'Lexend Deca', sans-serif;
@@ -121,6 +119,7 @@ h1 {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 40px;
     font-weight: 700;
+    padding-bottom: 5%;
 }
 
 body {
@@ -152,7 +151,7 @@ justify-content: left;
 }
 
 #open {
-    padding-top: 5%;
+    /* padding-top: 5%; */
     font-family: 'Lexend Deca', sans-serif;
 }
 
@@ -215,7 +214,58 @@ hr {
   \*****************************************************************************************************/
 .slide {
     background-color: cdf564;
+    border-radius: 25px;
+    height: 650px;
+    font-family: 'Lexend Deca', sans-serif;
 }
+
+
+
+/* Tracks slide */
+#topTracks_figure {
+    display: flex;
+    justify-content: space-around;
+}
+
+#topTracks img {
+    height: 200px;
+    width: 200px;
+}
+
+#top
+
+#topTracks h3 {
+    color: #f037a5;
+    font-weight: 700;
+    font-size: 100px;
+    display: flex;
+    justify-content: right;
+    margin-left: 2%;
+}
+/* temporary remove */
+
+
+#topArtists img {
+    height: 100px;
+    width: 100px;
+}
+
+#mostObscure img{
+    height: 100px;
+    width: 100px;
+}
+
+/* #topArtists {
+    display: none;
+}
+
+#topGenres {
+    display: none;
+}
+
+#mostObscure {
+    display: none;
+} */
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/

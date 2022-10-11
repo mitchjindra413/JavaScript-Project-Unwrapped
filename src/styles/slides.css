@@ -1,3 +1,54 @@
 .slide {
     background-color: cdf564;
+    border-radius: 25px;
+    height: 650px;
+    font-family: 'Lexend Deca', sans-serif;
 }
+
+
+
+/* Tracks slide */
+#topTracks_figure {
+    display: flex;
+    justify-content: space-around;
+}
+
+#topTracks img {
+    height: 200px;
+    width: 200px;
+}
+
+#top
+
+#topTracks h3 {
+    color: #f037a5;
+    font-weight: 700;
+    font-size: 100px;
+    display: flex;
+    justify-content: right;
+    margin-left: 2%;
+}
+/* temporary remove */
+
+
+#topArtists img {
+    height: 100px;
+    width: 100px;
+}
+
+#mostObscure img{
+    height: 100px;
+    width: 100px;
+}
+
+/* #topArtists {
+    display: none;
+}
+
+#topGenres {
+    display: none;
+}
+
+#mostObscure {
+    display: none;
+} */
