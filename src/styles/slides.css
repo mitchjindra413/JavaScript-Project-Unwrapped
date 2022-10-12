@@ -7,10 +7,6 @@
     min-width: 80%;
 }
 
-.slide li {
-    font-size: 120%;
-}
-
 /* Tracks slide */
 #topTracks_figure {
     display: flex;
@@ -40,6 +36,8 @@
 
 #topTracks ol {
     padding-bottom: 2%;
+    font-weight: 400;
+    font-size: 130%;
 }
 
 
@@ -71,11 +69,13 @@
 }
 
 #artist-info {
-    padding-right: 10%;
+    padding-right: 2%;
     padding-top: 2%;
 }
 #artist-info ol{
-    font-size: 135%;
+    font-size: 200%;
+    font-weight: 400;
+    
 }
 
 #artist-info h3 {
@@ -94,18 +94,57 @@
 }
 
 #topGenres_ul {
-    padding-left: 10%;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 800%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+}
+
+#topGenres_ul li {
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 /* Obscure Slide */
+#mostObscure {
+    background-color: #f037a5;
+}
+
+#obscure-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#mostObscure h2 {
+    font-weight: 700;
+    font-size: 800%;
+    color: #cdf564;
+}
 
 #obscure_imgs {
     width: 50%;
 }
 
 #obscure_imgs img {
-    width: 40%;
-    height: 40%;
+    padding-top: 5%;
+    width: 35%;
+    height: 30%;
+    position: relative;
+}
+
+#obscure-img-0 {
+    left: 50%;
+}
+
+#obscure-img-1 {
+    left: 40%;
+    bottom: 20%;
+}
+
+#obscure-img-2 {
+    left: 30%;
+    bottom: 40%;
 }

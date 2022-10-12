@@ -84,6 +84,7 @@ export class Slides {
         for(let i=0; i < 3; i++){
             let img = document.createElement('img');
             img.src = queryResults[1];
+            img.id = `obscure-img-${i}`
             div.append(img)
         }
     }
