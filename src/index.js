@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         if (sessionStorage.getItem('total_data') === null) {
             recieveRequest();
+            console.log('made request')
         }
         requestBttnEvents();
         document.querySelector('#login').style.display = "none";
@@ -22,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(Util.topArtist('artists_long_term', 5));
     console.log(Util.topTracks('tracks_long_term', 5));
     console.log(Util.topGenres('artists_long_term', 5));
-    console.log(Util.mostObscure('artists_long_term'));
+    console.log(Util.mostObscure('artists_short_term'));
 })
 
 function requestBttnEvents() {

@@ -1,5 +1,5 @@
 Colors:
 - Black
 - White
-- inchworm green: cdf564
-- frostbite pink: f037a5
+- inchworm green: #cdf564
+- frostbite pink: #f037a5

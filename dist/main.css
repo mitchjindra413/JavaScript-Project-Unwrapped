@@ -1,9 +1,12 @@
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/reset.css ***!
+  \****************************************************************************************************/
 html,body,header,
 nav,h1,a,
 ul,li,strong,
 main,button,i,
 section,img,div,
-h2,p,form,
+h2,p,form,h3,h4,
 fieldset,label,input,
 textarea,span,article,
 footer,time,small {
@@ -56,6 +59,9 @@ button,
 input[type="submit"] {
     cursor: pointer;
 }
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/after_login.css ***!
+  \**********************************************************************************************************/
 
 
 .wrapped {
@@ -105,6 +111,9 @@ input[type="submit"] {
     width: 200px;
     display: inline;
 }
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/before_login.css ***!
+  \***********************************************************************************************************/
 h1 {
     color: white;
     font-family: 'Lexend Deca', sans-serif;
@@ -200,14 +209,21 @@ hr {
     margin: 2%;
     background-color: white;
 }
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/slides.css ***!
+  \*****************************************************************************************************/
 .slide {
     background-color: cdf564;
     border-radius: 25px;
-    height: 650px;
+    /* height: 100%; */
     font-family: 'Lexend Deca', sans-serif;
+    min-height: 80%;
+    min-width: 80%;
 }
 
-
+.slide li {
+    font-size: 120%;
+}
 
 /* Tracks slide */
 #topTracks_figure {
@@ -218,47 +234,97 @@ hr {
 #topTracks_figure p{
     display: flex;
     justify-content: center;
+    padding-top: 10px;
 }
 
 #topTracks img {
-    height: 200px;
-    width: 200px;
+    padding-top: 15%;
+    display: flex;
+    justify-content: space-evenly;
 }
-
-#top
 
 #topTracks h3 {
     color: #f037a5;
     font-weight: 700;
-    font-size: 100px;
+    font-size: 800%;
     display: flex;
     justify-content: right;
-    margin-left: 2%;
-}
-/* temporary remove */
-
-
-#topArtists img {
-    height: 100px;
-    width: 100px;
+    margin-right: 2%;
 }
 
-#mostObscure img{
-    height: 100px;
-    width: 100px;
+#topTracks ol {
+    padding-bottom: 2%;
 }
 
-/* #topArtists {
-    display: none;
+
+/* Artist slide */
+#topArtists {
+    background-color: #f037a5;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-#topGenres {
-    display: none;
+#artist_grid {
+    padding-left: 5%;
+    min-height: 10%;
+    min-width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 
-#mostObscure {
-    display: none;
-} */
+.col {
+    flex-direction: row;
+    display: flex;
+}
 
+#topArtists img{
+    height: 30%;
+    width: 30%;
+}
 
-/*# sourceMappingURL=main.css.map*/
+#artist-info {
+    padding-right: 10%;
+    padding-top: 2%;
+}
+#artist-info ol{
+    font-size: 135%;
+}
+
+#artist-info h3 {
+    color: #cdf564;
+    font-weight: 700;
+    font-size: 800%;
+}
+
+/* Genre Slide */
+
+#topGenres h3 {
+    padding-left: 2%;
+    color: #f037a5;
+    font-weight: 700;
+    font-size: 800%;
+}
+
+#topGenres_ul {
+    padding-left: 10%;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+/* Obscure Slide */
+
+#obscure_imgs {
+    width: 50%;
+}
+
+#obscure_imgs img {
+    width: 40%;
+    height: 40%;
+}
+
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*************************************************************************************************************************************/
+
