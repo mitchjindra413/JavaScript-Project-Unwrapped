@@ -10,10 +10,6 @@ export class Slides {
 
     createSlideArtist(typeTime) {
     const queryResults = Util.topArtist(typeTime, 5);
-
-    // let h2 = document.querySelector('#topArtists_h2');
-    // h2.innerHTML = "" 
-    // add later maybe?
     
     let col1 = document.querySelector('#col1')
     let col2 = document.querySelector('#col2')
@@ -40,9 +36,6 @@ export class Slides {
         const queryResults = Util.topTracks(typeTime, 5);
 
         let ol = document.querySelector('#song_names')
-        // let track_h2 = document.querySelector('#topTracks_h2');
-        // track_h2.innerHTML = "";
-        // add latter maybe?
 
         let figure = document.querySelector('#topTracks_figure')
         for (let track of queryResults) {
@@ -66,7 +59,7 @@ export class Slides {
         let ul = document.querySelector('#topGenres_ul');
         for(let i = 0; i < 5; i++){
             let li = document.createElement('li');
-            li.innerHTML = queryResults[i][0];
+            li.innerHTML = queryResults[i][0] + '.';
             ul.append(li)
         }
     }
@@ -74,24 +67,20 @@ export class Slides {
     createSlideObscure(typeTime, trackTime) {
         const queryResults = Util.mostObscure(typeTime, trackTime);
 
-        let h3 = document.querySelector('#mostObscure_h3');
-        h3.innerHTML = 'Artist: ' + queryResults[0];
-
-        let h4 = document.querySelector('#pop_indx');
-        h4.innerHTML = "Popularity Index: " + queryResults[2];
-
-        let songh3 = document.querySelector('#most-obscure-song');
-        songh3.innerHTML = 'Song: ' + queryResults[3] + ' - ' +queryResults[4];
-
-        let songIndex = document.querySelector('#pop-index-song');
-        songIndex.innerHTML = "Popularity Index: " + queryResults[5];
-
-        let div = document.querySelector('#obscure_imgs')
+        let figure = document.querySelector('#obscure-imgs')
         for(let i=0; i < 3; i++){
+            let div = document.createElement('div');
             let img = document.createElement('img');
             img.src = queryResults[1];
             img.id = `obscure-img-${i}`
-            div.append(img)
+            figure.append(img)
         }
+
+        let artist = document.querySelector("#obscure-artist")
+        artist.innerHTML = queryResults[0]
+
+        let song = document.querySelector('#obscure-song')
+        song.innerHTML = queryResults[3] + ' - ' + queryResults[4]
+
     }
 }

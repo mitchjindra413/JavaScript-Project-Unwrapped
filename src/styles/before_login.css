@@ -9,6 +9,7 @@ h1 {
 body {
     background-color: black;
     margin: 2%;
+    padding-bottom: 5%;
 }
 
 #open_bttns {
@@ -26,6 +27,7 @@ justify-content: left;
     border-radius: 50px;
     font-family: 'Lexend Deca', sans-serif;
     font-size: larger;
+    
 }
 
 .login_bttn:hover {
@@ -92,4 +94,5 @@ hr {
     color: white;
     margin: 2%;
     background-color: white;
+    margin-top: 9%;
 }

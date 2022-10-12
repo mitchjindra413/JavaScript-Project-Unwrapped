@@ -17,7 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log('made request')
         }
         requestBttnEvents();
-        // redirected()
+        redirected()
+        slideButtonListener()
+        restartButtonListener()
     }
 
 })
@@ -29,15 +31,15 @@ function requestBttnEvents() {
 
     short.addEventListener('click', () => {
         new Slides('tracks_short_term', 'artists_short_term')
-        // individualSlide();
+        individualSlide();
     });
     med.addEventListener('click', () => {
         new Slides('tracks_medium_term', 'artists_medium_term')
-        // individualSlide();
+        individualSlide();
     });
     long.addEventListener('click', () => {
         new Slides('tracks_long_term', 'artists_long_term')
-        // individualSlide()
+        individualSlide()
     });
 }
 
@@ -69,15 +71,15 @@ function redirected() {
 function individualSlide(slide = 'topTracks') {
     document.querySelector('#login').style.display = 'none';
     document.querySelector('#logged_in').style.display = 'none';
-
+    
     let section = document.getElementsByClassName("slide");
     
     for (let i = 0; i < section.length; i++) {
-        if(section[i].id = slide) {
-            if(slide = 'topArtist') {
-                section[i].style.display = 'flex'
+        if(section[i].id === slide) {
+            if(slide === 'topArtists') {
+                section[i].style.display = 'flex';
             } else {
-                section[i].style.display = 'inline'
+                section[i].style.display = 'block';
             }
         } else {
             section[i].style.display = 'none';
@@ -85,4 +87,18 @@ function individualSlide(slide = 'topTracks') {
     }
 
     document.querySelector(".slide-movement").style.display = 'flex';
+}
+
+function slideButtonListener() {
+    let bttn_section = document.querySelector('.slide-movement')
+    bttn_section.addEventListener('click', (e) => {
+        individualSlide(e.target.dataset.slide)
+    })
+}
+
+
+function restartButtonListener() {
+    document.querySelector('#restart-bttn').addEventListener('click', () => {
+        location.reload();
+    });
 }

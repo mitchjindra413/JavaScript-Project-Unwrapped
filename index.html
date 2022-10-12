@@ -48,7 +48,6 @@
         </section>
 
     <section class="slide" id="topTracks">
-        <h2 id="topTracks_h2"></h2> 
         <figure id="topTracks_figure"></figure>
         <div>
             <h3>Top Songs:</h3>
@@ -70,36 +69,42 @@
     </section>
 
     <section class="slide" id="topGenres">
-        <!-- <h2 id="topGenres_h2"></h2> -->
         <h3>Top Genres:</h3>
         <ul id="topGenres_ul"></ul>
     </section>
 
-    <section class="slide" id="mostObscure">
-        <h2>Least Known:</h2>
+    <section class="slide" id="most-obscure">
+        <figure id="obscure-imgs"></figure>
         <div id="obscure-content">
-            <div>
-                <h3 id="mostObscure_h3"></h3>
-                <h4 id="pop_indx"></h4>
-                <p id="mostObscure_p"></p>
-                <h3 id="most-obscure-song"></h3>
-                <h4 id="pop-index-song"></h4>
+            <h2>Least Popular:</h2>
+            <div id="artist-info">
+                <h3>Artist:</h3>
+                <h4 id="obscure-artist"></h4>
             </div>
-            <div id="obscure_imgs"></div>
+            <div>
+                <h3>Song:</h3>
+                <h4 id="obscure-song"></h4>
+            </div>
+            
+            <p>*Spotify's popularity index is scaled from 0 to 100 and based on total number of streams, age of song, listener/save ratio, and streams/listener ratio</p>
         </div>
-        
     </section>
 
-    <section class="dashboard">
-    
+    <section class="slide" id="restart">
+        <div id="content">
+            <h2>Want One More <br> Go?</h2>
+            <p>You know you do 👀</p>
+            
+        </div>
+        <button id="restart-bttn">Restart</button>
     </section>
 
     <section class="slide-movement">
-        <button class="slide-movement-bttn" id="slide-movement-1">·</button>
-        <button class="slide-movement-even" id="slide-movement-2">·</button>
-        <button class="slide-movement-bttn" id="slide-movement-3">·</button>
-        <button class="slide-movement-even" id="slide-movement-4">·</button>
-        <button class="slide-movement-bttn" id="slide-movement-5">·</button>
+        <button class="slide-movement-bttn" id="slide-movement-tracks" data-slide="topTracks">·</button>
+        <button class="slide-movement-even" id="slide-movement-artists" data-slide="topArtists">·</button>
+        <button class="slide-movement-bttn" id="slide-movement-genres" data-slide="topGenres">·</button>
+        <button class="slide-movement-even" id="slide-movement-obscure" data-slide="most-obscure">·</button>
+        <button class="slide-movement-bttn" id="slide-movement-reset" data-slide="restart">·</button>
     </section>
     
 </body>

@@ -125,6 +125,7 @@ h1 {
 body {
     background-color: black;
     margin: 2%;
+    padding-bottom: 5%;
 }
 
 #open_bttns {
@@ -142,6 +143,7 @@ justify-content: left;
     border-radius: 50px;
     font-family: 'Lexend Deca', sans-serif;
     font-size: larger;
+    
 }
 
 .login_bttn:hover {
@@ -208,29 +210,24 @@ hr {
     color: white;
     margin: 2%;
     background-color: white;
+    margin-top: 9%;
 }
 /*!*****************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/slides.css ***!
   \*****************************************************************************************************/
 .slide {
-    background-color: cdf564;
+    background-color: #cdf564;
     border-radius: 25px;
     /* height: 100%; */
     font-family: 'Lexend Deca', sans-serif;
-    min-height: 80%;
-    min-width: 80%;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 /* Tracks slide */
 #topTracks_figure {
     display: flex;
     justify-content: space-around;
-}
-
-#topTracks_figure p{
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
 }
 
 #topTracks img {
@@ -280,8 +277,8 @@ hr {
 }
 
 #topArtists img{
-    height: 25%;
-    width: 25%;
+    height: 23%;
+    width: 23%;
 }
 
 #artist-info {
@@ -313,7 +310,7 @@ hr {
 
 #topGenres_ul {
     font-weight: 700;
-    font-size: 600%;
+    font-size: 650%;
     display: flex;
     flex-wrap: wrap;
     padding-left: 4%;
@@ -327,52 +324,50 @@ hr {
 }
 
 /* Obscure Slide */
-#mostObscure {
+#most-obscure {
     background-color: #f037a5;
 }
 
 #obscure-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-#mostObscure h2 {
+#most-obscure h2 {
     font-weight: 700;
     font-size: 800%;
     color: #cdf564;
     margin-left: 2%;
 }
 
-#obscure_imgs {
+#obscuyre-imgs {
     width: 50%;
 }
 
-#obscure_imgs img {
+#obscure-imgs img {
     margin-top: 5%;
-    width: 35%;
-    height: 30%;
-    position: relative;
+    width: 40%;
+    height: 40%;
 }
 
 #obscure-img-0 {
-    left: 50%;
+    transform: translate(80%);
 }
 
 #obscure-img-1 {
-    left: 40%;
-    top: -20%;
+    transform: translate(60%, -70%);
 }
 
 #obscure-img-2 {
-    left: 30%;
-    top: -40%;
+    transform: translate(40%, -140%);
 }
 
-#mostObscure h3{
+#most-obscure h3 {
     color: black;
     font-weight: 500;
     font-size: 500%;
 }
+
 
 /* movement buttons */
 
@@ -381,6 +376,7 @@ hr {
     display: flex;
     justify-content: center;
     font-size: 120px;
+    max-height: 5%;
 }
 
 .slide-movement-bttn:hover {
@@ -389,6 +385,42 @@ hr {
 
 .slide-movement-even:hover {
     color: #f037a5;
+}
+
+/* restart */
+#restart {
+    background-color: black;
+    min-height: fit-content;
+    
+}
+
+#content h2 {
+    font-weight: 700;
+    font-size: 100px;
+    color: #cdf564;
+}
+
+#content p {
+    color: white;
+    font-size: 50px;
+    padding-bottom: 5%;
+}
+
+#restart button {
+    background-color: #f037a5;
+    border: 4px solid black;
+    color: black;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: larger;
+}
+
+#restart button:hover {
+    background-color: black;
+    color: #f037a5;
+    border: 4px solid #f037a5;
 }
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!

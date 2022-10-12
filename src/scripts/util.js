@@ -68,16 +68,18 @@ export const Util = {
         let songObscure = 101;
         let track = null;
         let artist = null;
+        let songPicUrl = null;
     
         for (let i = 0; i < parse[songTime].length; i++) {
             if (parse[songTime][i].popularity < obscure) {
                 songObscure = parse[songTime][i].popularity;
                 track = parse[songTime][i].name;
                 artist = parse[songTime][i].artists[0].name
+                songPicUrl = parse[songTime][i].album.images[0].url
             }
         }
 
-        return [name, picUrl, obscure, track, artist, songObscure];
+        return [name, picUrl, obscure, track, artist, songObscure, songPicUrl];
     },
 
     randomColor() {
