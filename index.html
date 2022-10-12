@@ -13,11 +13,13 @@
     <title>Unwrapped</title>
 </head>
 
-<body>
+<header>
     <h1>UNWRAPPED</h1>
-    <!-- <a href=""> <img src="" alt=""></a> github icon-->
-    <!-- <a href=""> <img src="" alt=""></a> linkedin icon -->
-    <div id="login">
+</header>
+
+<body>
+
+    <section id="login">
         <div id="open">
             <p id="open_1">Why wait for <br> the year to end?</p>
             <p id="open_2">Check your top statistics from Spotify</p>
@@ -27,9 +29,10 @@
             <a class="login_bttn" id="demo_bttn" href="">Demo</a>
         </div>
         
-    </div>
+    </section>
+
     
-    <div id="logged_in">
+    <section id="logged_in">
         <div id="words">
             <p class="wrapped">Spotify</p>
             <p class="wrapped">Statistics</p>
@@ -42,19 +45,18 @@
                 <button class="request_bttn" id="long_bttn">All Time</button>
             </div>
         
-    </div>
+        </section>
 
-    <div class="slide" id="topTracks">
+    <section class="slide" id="topTracks">
         <h2 id="topTracks_h2"></h2> 
         <figure id="topTracks_figure"></figure>
         <div>
             <h3>Top Songs:</h3>
             <ol id="song_names"></ol>
         </div>
-    </div>
+    </section>
 
-    <div class="slide" id="topArtists">
-        <!-- <h2 id="topArtists_h2"></h2> -->
+    <section class="slide" id="topArtists">
         <figure id="artist_grid">
             <div class="col" id="col1"></div>
             <div class="col" id="col2"></div>
@@ -65,56 +67,67 @@
             <ol id="topArtists_ol"></ol>
         </div>
         
-    </div>
+    </section>
 
-    <div class="slide" id="topGenres">
+    <section class="slide" id="topGenres">
         <!-- <h2 id="topGenres_h2"></h2> -->
         <h3>Top Genres:</h3>
         <ul id="topGenres_ul"></ul>
-    </div>
+    </section>
 
-    <div class="slide" id="mostObscure">
-        
+    <section class="slide" id="mostObscure">
+        <h2>Least Known:</h2>
         <div id="obscure-content">
             <div>
                 <h3 id="mostObscure_h3"></h3>
                 <h4 id="pop_indx"></h4>
                 <p id="mostObscure_p"></p>
+                <h3 id="most-obscure-song"></h3>
+                <h4 id="pop-index-song"></h4>
             </div>
             <div id="obscure_imgs"></div>
         </div>
+        
+    </section>
 
-        <h2>Least Known Artist:</h2>
-    </div>
-
-    <div class="dashboard">
+    <section class="dashboard">
     
-    </div>
-    
-    <hr>
+    </section>
 
-    <footer>
-        
-        <div class="footer_words">
-            <p>Site is inteded for educational purposes and proof of ability</p>
-            <p>Not affiliated with Spotify Technology S.A.</p>
-            <p>All images are copyrighted by their prospective owners</p>
-            <button id="privacy">Privacy Notice</button>
-        </div>
-        
-        <div class="footer_links">
-            <div class="profile_links">
-                <a href="https://www.linkedin.com/in/mitchell-jindra" target="_blank"><img
-                        src="./src/img/dlf.pt-linkedin-logo-png-4051934.png" alt="linkedin logo">
-                </a>
-                <a href="https://github.com/mitchjindra413" target="_blank"><img
-                        src="./src/img/github-pages-logo-repository-fork-github-86eddab19cbc3ae293ada0fe0fb9e27d.png" alt="github logo">
-                </a>
-            </div> 
-            <p>Interested in seeing more? Check out my profiles 👀</p>
-        </div>
-        
-    </footer>
+    <section class="slide-movement">
+        <button class="slide-movement-bttn" id="slide-movement-1">·</button>
+        <button class="slide-movement-even" id="slide-movement-2">·</button>
+        <button class="slide-movement-bttn" id="slide-movement-3">·</button>
+        <button class="slide-movement-even" id="slide-movement-4">·</button>
+        <button class="slide-movement-bttn" id="slide-movement-5">·</button>
+    </section>
+    
 </body>
+
+<hr>
+
+<footer>
+
+    <div class="footer_words">
+        <p>Site is inteded for educational purposes and proof of ability</p>
+        <p>Not affiliated with Spotify Technology S.A.</p>
+        <p>All images are copyrighted by their prospective owners</p>
+        <button id="privacy">Privacy Notice</button>
+    </div>
+
+    <div class="footer_links">
+        <div class="profile_links">
+            <a href="https://www.linkedin.com/in/mitchell-jindra" target="_blank"><img
+                    src="./src/img/dlf.pt-linkedin-logo-png-4051934.png" alt="linkedin logo">
+            </a>
+            <a href="https://github.com/mitchjindra413" target="_blank"><img
+                    src="./src/img/github-pages-logo-repository-fork-github-86eddab19cbc3ae293ada0fe0fb9e27d.png"
+                    alt="github logo">
+            </a>
+        </div>
+        <p>Interested in seeing more? Check out my profiles 👀</p>
+    </div>
+
+</footer>
 
 </html>

@@ -264,6 +264,8 @@ hr {
 }
 
 #artist_grid {
+    padding-top: 2%;
+    padding-bottom: 2%;
     padding-left: 5%;
     min-height: 10%;
     min-width: 10%;
@@ -278,13 +280,13 @@ hr {
 }
 
 #topArtists img{
-    height: 30%;
-    width: 30%;
+    height: 25%;
+    width: 25%;
 }
 
 #artist-info {
-    padding-right: 2%;
-    padding-top: 2%;
+    padding-right: 3%;
+    
 }
 #artist-info ol{
     font-size: 200%;
@@ -296,6 +298,8 @@ hr {
     color: #cdf564;
     font-weight: 700;
     font-size: 800%;
+    position: relative;
+
 }
 
 /* Genre Slide */
@@ -309,7 +313,7 @@ hr {
 
 #topGenres_ul {
     font-weight: 700;
-    font-size: 800%;
+    font-size: 600%;
     display: flex;
     flex-wrap: wrap;
     padding-left: 4%;
@@ -336,6 +340,7 @@ hr {
     font-weight: 700;
     font-size: 800%;
     color: #cdf564;
+    margin-left: 2%;
 }
 
 #obscure_imgs {
@@ -343,7 +348,7 @@ hr {
 }
 
 #obscure_imgs img {
-    padding-top: 5%;
+    margin-top: 5%;
     width: 35%;
     height: 30%;
     position: relative;
@@ -355,12 +360,35 @@ hr {
 
 #obscure-img-1 {
     left: 40%;
-    bottom: 20%;
+    top: -20%;
 }
 
 #obscure-img-2 {
     left: 30%;
-    bottom: 40%;
+    top: -40%;
+}
+
+#mostObscure h3{
+    color: black;
+    font-weight: 500;
+    font-size: 500%;
+}
+
+/* movement buttons */
+
+.slide-movement {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 120px;
+}
+
+.slide-movement-bttn:hover {
+    color:#cdf564
+}
+
+.slide-movement-even:hover {
+    color: #f037a5;
 }
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!

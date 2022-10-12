@@ -5,7 +5,7 @@ export class Slides {
         this.createSlideTrack(trackTime);
         this.createSlideArtist(artistTime);
         this.createSlideGenre(artistTime);
-        this.createSlideObscure(artistTime)
+        this.createSlideObscure(artistTime, trackTime)
     }
 
     createSlideArtist(typeTime) {
@@ -71,14 +71,20 @@ export class Slides {
         }
     }
 
-    createSlideObscure(typeTime) {
-        const queryResults = Util.mostObscure(typeTime);
+    createSlideObscure(typeTime, trackTime) {
+        const queryResults = Util.mostObscure(typeTime, trackTime);
 
         let h3 = document.querySelector('#mostObscure_h3');
-        h3.innerHTML = queryResults[0];
+        h3.innerHTML = 'Artist: ' + queryResults[0];
 
         let h4 = document.querySelector('#pop_indx');
-        h4.innerHTML = queryResults[2];
+        h4.innerHTML = "Popularity Index: " + queryResults[2];
+
+        let songh3 = document.querySelector('#most-obscure-song');
+        songh3.innerHTML = 'Song: ' + queryResults[3] + ' - ' +queryResults[4];
+
+        let songIndex = document.querySelector('#pop-index-song');
+        songIndex.innerHTML = "Popularity Index: " + queryResults[5];
 
         let div = document.querySelector('#obscure_imgs')
         for(let i=0; i < 3; i++){

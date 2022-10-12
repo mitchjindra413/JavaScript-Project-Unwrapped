@@ -50,7 +50,7 @@ export const Util = {
         return topGernreList;
     },
 
-    mostObscure(typeTime) {
+    mostObscure(typeTime, songTime) {
         
         const parse = JSON.parse(sessionStorage.total_data)
         let obscure = 101;
@@ -65,7 +65,19 @@ export const Util = {
             }
         }
 
-        return [name, picUrl, obscure];
+        let songObscure = 101;
+        let track = null;
+        let artist = null;
+    
+        for (let i = 0; i < parse[songTime].length; i++) {
+            if (parse[songTime][i].popularity < obscure) {
+                songObscure = parse[songTime][i].popularity;
+                track = parse[songTime][i].name;
+                artist = parse[songTime][i].artists[0].name
+            }
+        }
+
+        return [name, picUrl, obscure, track, artist, songObscure];
     },
 
     randomColor() {

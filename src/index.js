@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let url = auth_url();
         bttn.setAttribute("href", url);
 
-        document.querySelector('#logged_in').style.display = "none"
+        setup()
         
     } else {
         if (sessionStorage.getItem('total_data') === null) {
@@ -17,13 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log('made request')
         }
         requestBttnEvents();
-        document.querySelector('#login').style.display = "none";
+        // redirected()
     }
 
-    console.log(Util.topArtist('artists_long_term', 5));
-    console.log(Util.topTracks('tracks_long_term', 5));
-    console.log(Util.topGenres('artists_long_term', 5));
-    console.log(Util.mostObscure('artists_short_term'));
 })
 
 function requestBttnEvents() {
@@ -31,7 +27,62 @@ function requestBttnEvents() {
     let med = document.querySelector('#medium_bttn');
     let long = document.querySelector('#long_bttn');
 
-    short.addEventListener('click', () => new Slides('tracks_short_term', 'artists_short_term'));
-    med.addEventListener('click', () => new Slides('tracks_medium_term', 'artists_medium_term'));
-    long.addEventListener('click', () => new Slides('tracks_long_term', 'artists_long_term'))
+    short.addEventListener('click', () => {
+        new Slides('tracks_short_term', 'artists_short_term')
+        // individualSlide();
+    });
+    med.addEventListener('click', () => {
+        new Slides('tracks_medium_term', 'artists_medium_term')
+        // individualSlide();
+    });
+    long.addEventListener('click', () => {
+        new Slides('tracks_long_term', 'artists_long_term')
+        // individualSlide()
+    });
+}
+
+
+function setup() {
+    document.querySelector('#login').style.display = 'block';
+    document.querySelector('#logged_in').style.display = 'none';
+    let section = document.getElementsByClassName("slide");
+    console.log('section:', section)
+    for (let i = 0; i < section.length; i++) {
+        section[i].style.display = 'none';
+    }
+    document.querySelector(".slide-movement").style.display = 'none';
+}
+
+function redirected() {
+    document.querySelector('#login').style.display = 'none';
+    document.querySelector('#logged_in').style.display = 'block';
+
+    let section = document.getElementsByClassName("slide");
+
+    for(let i = 0; i < section.length; i++){
+        section[i].style.display = 'none';
+    }
+
+    document.querySelector(".slide-movement").style.display = 'none';
+}
+
+function individualSlide(slide = 'topTracks') {
+    document.querySelector('#login').style.display = 'none';
+    document.querySelector('#logged_in').style.display = 'none';
+
+    let section = document.getElementsByClassName("slide");
+    
+    for (let i = 0; i < section.length; i++) {
+        if(section[i].id = slide) {
+            if(slide = 'topArtist') {
+                section[i].style.display = 'flex'
+            } else {
+                section[i].style.display = 'inline'
+            }
+        } else {
+            section[i].style.display = 'none';
+        }
+    }
+
+    document.querySelector(".slide-movement").style.display = 'flex';
 }
