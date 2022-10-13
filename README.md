@@ -3,12 +3,12 @@ What comes once a year in December that people across the globe anxiously wait f
 Acess your data in the familiar format 
 
 ## Functionality and MVPS
-In Unwrapped, users will be able to:
+In Unwrapped, users can:
 - acess their own personal Spotify statistics
 - interact with personalised preview of top statistics
   - choose between weekly, yearly, or total
 
-In addition, this project will include:
+In addition, this project includes:
 - cohesive styling
 - AJAX usage to create SPA 
 
