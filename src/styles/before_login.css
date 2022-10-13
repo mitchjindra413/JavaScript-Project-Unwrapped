@@ -13,9 +13,9 @@ body {
 }
 
 #open_bttns {
-padding-top: 5%;
-display: flex;
-justify-content: left;
+    padding-top: 5%;
+    display: flex;
+    justify-content: left;
 }
 
 .login_bttn {
@@ -45,6 +45,7 @@ justify-content: left;
     color: #cdf564;
     font-weight: 700;
     font-size: 100px;
+    
 }
 
 #open_2 {
