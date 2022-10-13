@@ -15,6 +15,7 @@
     font-family: 'Lexend Deca', sans-serif;
     min-height: 100%;
     min-width: 100%;
+
     opacity: 0;
     animation: fadeIn 3s;
     animation-delay: 0s;
@@ -92,8 +93,6 @@
     color: #cdf564;
     font-weight: 700;
     font-size: 800%;
-    position: relative;
-
 }
 
 /* Genre Slide */
@@ -130,6 +129,7 @@
     font-size: 800%;
     color: #cdf564;
     margin-left: 2%;
+    margin-top: 2%;
 }
 
 #most-obscure h3 {
@@ -140,17 +140,13 @@
 #most-obscure aside {
     font-weight: 200;
     color: white;
-    margin: 2%;
+    margin: 0%;
 }
 
 #obscure-content {
     display: flex;
     justify-content: space-around;
 }
-
-/* #obscure-content h4{
-    font-size: ;
-} */
 
 #obscure-text {
     margin-left: 100px;
