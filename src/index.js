@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         if (sessionStorage.getItem('total_data') === null) {
             recieveRequest();
-            console.log('made request')
         }
         
         Listener.redirected()

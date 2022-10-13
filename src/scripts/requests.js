@@ -45,7 +45,7 @@ export async function recieveRequest(){
 
     
     const tds = JSON.stringify(total_data)
-    console.log(tds);
+    
     sessionStorage.setItem('total_data', tds);
     return total_data;
 }

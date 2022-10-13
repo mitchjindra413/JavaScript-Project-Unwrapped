@@ -25,7 +25,7 @@ export const Listener = {
         document.querySelector('#login').style.display = 'block';
         document.querySelector('#logged_in').style.display = 'none';
         let section = document.getElementsByClassName("slide");
-        console.log('section:', section)
+        
         for (let i = 0; i < section.length; i++) {
             section[i].style.display = 'none';
         }
@@ -80,5 +80,5 @@ export const Listener = {
         });
     }
 
-    
+
 }
