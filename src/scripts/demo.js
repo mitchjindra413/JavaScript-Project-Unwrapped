@@ -1,7 +1,9 @@
+import { Listener } from './listener_util'
+
 class Demo {
     constructor() {
         sessionStorage.setItem(this.exampledata())
-        
+        Listener.redirected()
     }
 
 
