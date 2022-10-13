@@ -111,6 +111,15 @@ input[type="submit"] {
     width: 200px;
     display: inline;
 }
+
+#login aside {
+    padding-top: 5%;
+    padding-left: 5%;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+}
 /*!***********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/before_login.css ***!
   \***********************************************************************************************************/
@@ -328,11 +337,6 @@ hr {
     background-color: #f037a5;
 }
 
-#obscure-content {
-    display: flex;
-    justify-content: space-around;
-}
-
 #most-obscure h2 {
     font-weight: 700;
     font-size: 800%;
@@ -340,32 +344,63 @@ hr {
     margin-left: 2%;
 }
 
-#obscuyre-imgs {
-    width: 50%;
+#most-obscure h3 {
+    color: white;
+    
 }
 
-#obscure-imgs img {
-    margin-top: 5%;
-    width: 40%;
-    height: 40%;
+#most-obscure aside {
+    font-weight: 200;
+    color: white;
+    margin: 2%;
+    padding-bottom: 2%;
+}
+
+#obscure-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#obscure-content h4{
+    font-size: ;
+}
+
+#obscure-text {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.info {
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 500%;
+
+}
+
+.info h4 {
+    padding-left: 5%;
+}
+
+#obscure-imgs {
+    width: 50%;
+    height: 50%;
+}
+
+#obscure-imgs {
+    max-width: 250px;
+    max-height: 250px;
 }
 
 #obscure-img-0 {
-    transform: translate(80%);
+    transform: translate(100px, 50px);
 }
-
 #obscure-img-1 {
-    transform: translate(60%, -70%);
+    transform: translate(40px, -100px);
 }
-
 #obscure-img-2 {
-    transform: translate(40%, -140%);
-}
-
-#most-obscure h3 {
-    color: black;
-    font-weight: 500;
-    font-size: 500%;
+    transform: translate(-10px, -240px);
 }
 
 
