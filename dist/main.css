@@ -1,3 +1,6 @@
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/reset.css ***!
+  \****************************************************************************************************/
 html,body,header,
 nav,h1,a,
 ul,li,strong,
@@ -56,7 +59,18 @@ button,
 input[type="submit"] {
     cursor: pointer;
 }
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/after_login.css ***!
+  \**********************************************************************************************************/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
 
+    to {
+        opacity: 1;
+    }
+}
 
 .wrapped {
     color: #cdf564;
@@ -92,12 +106,37 @@ input[type="submit"] {
     font-size: larger;
     height: 10%;
     
+    opacity: 0;
+    animation: fadeIn 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
 .request_bttn:hover {
     background-color: black;
     border: 4px solid #f037a5;
     color: #f037a5;
+}
+
+#short_bttn {
+    opacity: 0;
+    animation: fadeIn 3s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+#medium_bttn {
+    opacity: 0;
+    animation: fadeIn 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+#long_bttn {
+    opacity: 0;
+    animation: fadeIn 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 .albums_front {
@@ -113,7 +152,25 @@ input[type="submit"] {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 200;
     font-size: 20px;
+
+    opacity: 0;
+    animation: fadeIn 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/before_login.css ***!
+  \***********************************************************************************************************/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 h1 {
     color: white;
     font-family: 'Lexend Deca', sans-serif;
@@ -144,7 +201,12 @@ body {
     font-family: 'Lexend Deca', sans-serif;
     font-size: larger;
     
+    opacity: 0;
+    animation: fadeIn 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
+
 
 .login_bttn:hover {
     background-color: black;
@@ -153,8 +215,11 @@ body {
 }
 
 #open {
-    /* padding-top: 5%; */
     font-family: 'Lexend Deca', sans-serif;
+    opacity: 0;
+        animation: fadeIn 3s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
 }
 
 #open_1 {
@@ -213,6 +278,19 @@ hr {
     background-color: white;
     margin-top: 9%;
 }
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/slides.css ***!
+  \*****************************************************************************************************/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .slide {
     background-color: #cdf564;
     border-radius: 25px;
@@ -220,6 +298,10 @@ hr {
     font-family: 'Lexend Deca', sans-serif;
     min-height: 100%;
     min-width: 100%;
+    opacity: 0;
+    animation: fadeIn 3s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
 }
 
 /* Tracks slide */
@@ -445,6 +527,7 @@ hr {
     color: #f037a5;
     border: 4px solid #f037a5;
 }
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*************************************************************************************************************************************/
 
-
-/*# sourceMappingURL=main.css.map*/

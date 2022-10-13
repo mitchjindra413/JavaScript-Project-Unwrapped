@@ -1,3 +1,13 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .slide {
     background-color: #cdf564;
     border-radius: 25px;
@@ -5,6 +15,10 @@
     font-family: 'Lexend Deca', sans-serif;
     min-height: 100%;
     min-width: 100%;
+    opacity: 0;
+    animation: fadeIn 3s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
 }
 
 /* Tracks slide */
