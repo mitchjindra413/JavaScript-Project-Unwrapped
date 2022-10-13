@@ -17,8 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             recieveRequest();
         }
         
-        Listener.redirected()
-        
+        Listener.redirected();
     }
     Listener.requestBttnEvents();
     Listener.slideButtonListener();

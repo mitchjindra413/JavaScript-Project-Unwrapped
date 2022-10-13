@@ -464,7 +464,6 @@ hr {
     display: flex;
     justify-content: center;
     font-size: 120px;
-    max-height: 5%;
 }
 
 .slide-movement-bttn:hover {
