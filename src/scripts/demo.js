@@ -1,8 +1,9 @@
 import { Listener } from './listener_util'
 
-class Demo {
+export class Demo {
     constructor() {
-        sessionStorage.setItem(this.exampledata())
+        debugger
+        sessionStorage.setItem('total_data', this.exampledata())
         Listener.redirected()
     }
 

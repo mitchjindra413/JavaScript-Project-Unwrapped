@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         bttn.setAttribute("href", url);
 
         Listener.setup()
-        
+        Listener.demoButtonListener()
     } else {
         if (sessionStorage.getItem('total_data') === null) {
             recieveRequest();

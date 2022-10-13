@@ -1,4 +1,5 @@
 import { Slides } from './slides'
+import { Demo } from './demo'
 
 export const Listener = {
     requestBttnEvents() {
@@ -78,7 +79,12 @@ export const Listener = {
         document.querySelector('#restart-bttn').addEventListener('click', () => {
             location.reload();
         });
+    },
+
+    demoButtonListener() {
+        document.querySelector('#demo_bttn').addEventListener('click', () => {
+            console.log('hello')
+            new Demo()
+        });
     }
-
-
 }
