@@ -20,6 +20,13 @@ In addition, this project includes:
 ## Technologies, Libraries, and APIs
 - Spotify API
 
+## Time Frame
+Thursday: reasearch spotify api authentication paths and implement
+Friday: Handle fetch requests
+Monday: Design and setup views
+Tuesday: CSS
+Wednesday: Complete view population logic
+
 ## Wireframe
 <img width="813" alt="Screen Shot 2022-10-07 at 2 47 29 PM" src="https://user-images.githubusercontent.com/65314998/195654795-eb2c4013-8126-41f4-8484-c501038c7ead.png">
 
