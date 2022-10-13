@@ -12,7 +12,7 @@ In addition, this project will include:
 - cohesive styling
 - AJAX usage to create SPA 
 
-##Example Images:
+## Example Images:
 ![image](https://user-images.githubusercontent.com/65314998/195657010-e9b4fac0-23b9-47a5-b0ab-b8f56379785b.png)
 ![image](https://user-images.githubusercontent.com/65314998/195657184-945141ec-9960-4fb1-88dd-5a92804560da.png)
 ![image](https://user-images.githubusercontent.com/65314998/195657353-843df654-002e-4ac6-ac8a-2b9778dde495.png)
