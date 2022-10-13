@@ -127,7 +127,6 @@
     font-weight: 200;
     color: white;
     margin: 2%;
-    padding-bottom: 2%;
 }
 
 #obscure-content {
@@ -135,13 +134,13 @@
     justify-content: space-around;
 }
 
-#obscure-content h4{
+/* #obscure-content h4{
     font-size: ;
-}
+} */
 
 #obscure-text {
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 
 .info {
