@@ -1,6 +1,8 @@
 # JavaScript Project: Unwrapped
 What comes once a year in December that people across the globe anxiously wait for? That's right - Spotify Wrapped! But why wait for the years end to take control of your data?  
-Acess your data in the familiar format 
+Acess your data in the familiar format.
+
+https://mitchjindra413.github.io/JavaScript-Project-Unwrapped/
 
 ## Functionality and MVPS
 In Unwrapped, users can:
