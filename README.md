@@ -12,7 +12,7 @@ In Unwrapped, users can:
 
 In addition, this project includes:
 - cohesive styling
-- AJAX usage to create SPA 
+
 
 ## Example Images:
 ![image](https://user-images.githubusercontent.com/65314998/195657010-e9b4fac0-23b9-47a5-b0ab-b8f56379785b.png)
