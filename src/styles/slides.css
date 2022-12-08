@@ -157,18 +157,24 @@
 }
 
 #obscure-imgs {
-    max-width: 300px;
-    max-height: 300px;
+    width: 300px;
+    height: 300px;
 }
 
 #obscure-img-0 {
     transform: translate(100px, 80px);
+    width: 300px;
+        height: 300px;
 }
 #obscure-img-1 {
     transform: translate(40px, -110px);
+    width: 300px;
+        height: 300px;
 }
 #obscure-img-2 {
     transform: translate(-20px, -300px);
+    width: 300px;
+        height: 300px;
 }
 
 
