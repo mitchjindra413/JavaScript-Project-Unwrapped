@@ -19,23 +19,23 @@ export async function recieveRequest(){
     const total_data = {};
     let length = ['short_term', 'medium_term', 'long_term']
     for(let time of length) {
-        const response = await fetch(generateRequestUrl('tracks', '50', time), {
-            method: 'GET',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + token
-            }
-        })
-        if(response.ok == false){
+        try{
+            const response = await fetch(generateRequestUrl('tracks', '50', time), {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + token
+                }
+            })
+
+            const data = await response.json()
+            total_data[`tracks_${time}`] = data.items
+        } catch(err) {  
             total_data = Demo.exampledata()
             alert('You have successfully signed in but are not yet preapproved. For demonstration purposes, sample data has been filled in place of your personal data.')
             return sessionStorage.setItem('total_data', total_data)
         }
-        
-        const data = await response.json()
-        total_data[`tracks_${time}`] = data.items
-            
 
         const response2 = await fetch(generateRequestUrl('artists', '50', time), {
             method: 'GET',
