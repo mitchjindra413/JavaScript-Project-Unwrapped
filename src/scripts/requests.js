@@ -27,13 +27,13 @@ export async function recieveRequest(){
                 'Authorization': 'Bearer ' + token
             }
         })
-        if(!response.ok){
+        if(response.ok == false){
             total_data = Demo.exampledata()
             alert('You have successfully signed in but are not yet preapproved. For demonstration purposes, sample data has been filled in place of your personal data.')
             return sessionStorage.setItem('total_data', total_data)
         }
+        
         const data = await response.json()
-            
         total_data[`tracks_${time}`] = data.items
             
 
