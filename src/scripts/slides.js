@@ -9,28 +9,28 @@ export class Slides {
     }
 
     createSlideArtist(typeTime) {
-    const queryResults = Util.topArtist(typeTime, 5);
-    
-    let col1 = document.querySelector('#col1')
-    let col2 = document.querySelector('#col2')
-    let col3 = document.querySelector('#col3')
-    const cols = [col1, col2, col3]
-    
-    for (let col of cols){
-        for (let i = 0; i < 3; i++) {
-            let img = document.createElement('img');
-            img.src = queryResults[0][1];
-            col.append(img);
+        const queryResults = Util.topArtist(typeTime, 5);
+        
+        let col1 = document.querySelector('#col1')
+        let col2 = document.querySelector('#col2')
+        let col3 = document.querySelector('#col3')
+        const cols = [col1, col2, col3]
+        
+        for (let col of cols){
+            for (let i = 0; i < 3; i++) {
+                let img = document.createElement('img');
+                img.src = queryResults[0][1];
+                col.append(img);
+            }
+        }
+
+        let ol = document.querySelector('#topArtists_ol')
+        for (let artist of queryResults) {
+            let li = document.createElement('li');
+            li.innerHTML = `${artist[0]}`;
+            ol.append(li);
         }
     }
-
-    let ol = document.querySelector('#topArtists_ol')
-    for (let artist of queryResults) {
-        let li = document.createElement('li');
-        li.innerHTML = `${artist[0]}`;
-        ol.append(li);
-    }
-}
 
     createSlideTrack(typeTime) {
         const queryResults = Util.topTracks(typeTime, 5);

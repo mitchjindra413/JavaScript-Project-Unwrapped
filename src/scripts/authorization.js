@@ -1,5 +1,5 @@
 const client_id = '9b212b049d7743ec9891cd13f67a9b85'
-const redirect_uri = 'https://mitchjindra413.github.io/JavaScript-Project-Unwrapped/'
+const redirect_uri = 'http://127.0.0.1:5500/index.html'
 
 const stateKey = 'spotify_auth_state'
 const scope = 'user-read-private user-read-email user-read-recently-played user-top-read';

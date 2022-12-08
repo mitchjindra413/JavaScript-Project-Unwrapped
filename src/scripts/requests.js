@@ -1,4 +1,4 @@
-import { Demo } from "./demo";
+import { Listener } from "./listener_util";
 
 const key = window.location.hash
 const token = key.slice(key.indexOf("=") + 1, key.indexOf("&"))
@@ -15,7 +15,7 @@ function generateRequestUrl(type, length, time) {
 // https://api.spotify.com/v1/me/top/song?limit=50&time_range=long_term
 
 export async function recieveRequest(){
-
+    debugger
     const total_data = {};
     let length = ['short_term', 'medium_term', 'long_term']
     for(let time of length) {
@@ -32,9 +32,9 @@ export async function recieveRequest(){
             const data = await response.json()
             total_data[`tracks_${time}`] = data.items
         } catch(err) {  
-            total_data = Demo.exampledata()
+            console.log('hi')
             alert('You have successfully signed in but are not yet preapproved. For demonstration purposes, sample data has been filled in place of your personal data.')
-            return sessionStorage.setItem('total_data', total_data)
+            return sessionStorage.setItem('total_data', Listener.exampledata())
         }
 
         const response2 = await fetch(generateRequestUrl('artists', '50', time), {
@@ -52,7 +52,7 @@ export async function recieveRequest(){
 
     
     const tds = JSON.stringify(total_data)
-    
+    console.log('hi')
     sessionStorage.setItem('total_data', tds);
     return total_data;
 }
