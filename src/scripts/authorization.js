@@ -2,7 +2,7 @@ const client_id = '9b212b049d7743ec9891cd13f67a9b85'
 const redirect_uri = 'https://mitchjindra413.github.io/JavaScript-Project-Unwrapped/'
 
 const stateKey = 'spotify_auth_state'
-const scope = 'user-read-private user-read-email user-read-recently-played user-top-read playlist-modify-public';
+const scope = 'user-read-private user-read-email user-read-recently-played user-top-read';
 
 
 function generateRandomString(length) {
@@ -17,9 +17,6 @@ function generateRandomString(length) {
 };
 
 const state = generateRandomString(16);
-
-
-
 
 export const auth_url = () => {
     let url = 'https://accounts.spotify.com/authorize';

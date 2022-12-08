@@ -2,7 +2,6 @@ import { Listener } from './listener_util'
 
 export class Demo {
     constructor() {
-        debugger
         sessionStorage.setItem('total_data', this.exampledata())
         Listener.redirected()
     }
