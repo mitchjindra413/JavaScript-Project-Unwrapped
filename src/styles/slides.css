@@ -53,17 +53,12 @@
 /* Artist slide */
 #topArtists {
     background-color: #f037a5;
-    display: flex;
-    justify-content: space-between;
-    
 }
 
 #artist_grid {
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 5%;
-    min-height: 10%;
-    min-width: 10%;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -80,11 +75,11 @@
 }
 
 #artist-info {
-    padding-right: 3%;
-    
+    margin-top: 50px;
+    margin-right: 150px;
 }
 #artist-info ol{
-    font-size: 200%;
+    font-size: 35px;
     font-weight: 400;
     
 }
@@ -124,12 +119,11 @@
     background-color: #f037a5;
 }
 
-#most-obscure h2 {
+#obscure-title {
     font-weight: 700;
-    font-size: 800%;
+    font-size: 100px;
     color: #cdf564;
-    margin-left: 2%;
-    margin-top: 2%;
+    margin-top: 100px;
 }
 
 #most-obscure h3 {
@@ -140,11 +134,13 @@
 #obscure-content {
     display: flex;
     justify-content: space-around;
+    margin-top: 100px;
 }
 
 #obscure-text {
     margin-left: 100px;
     margin-right: 50px;
+    
 }
 
 .info {
@@ -152,7 +148,7 @@
     display: flex;
     align-items: center;
     font-weight: 700;
-    font-size: 500%;
+    font-size: 50px;
 
 }
 
@@ -161,23 +157,18 @@
 }
 
 #obscure-imgs {
-    width: 50%;
-    height: 50%;
-}
-
-#obscure-imgs {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 #obscure-img-0 {
-    transform: translate(100px, 50px);
+    transform: translate(100px, 80px);
 }
 #obscure-img-1 {
-    transform: translate(40px, -100px);
+    transform: translate(40px, -110px);
 }
 #obscure-img-2 {
-    transform: translate(-10px, -240px);
+    transform: translate(-20px, -300px);
 }
 
 
