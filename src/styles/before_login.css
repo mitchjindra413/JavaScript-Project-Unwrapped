@@ -112,7 +112,7 @@ hr {
 header {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 25px;
+    padding-bottom: 40px;
     align-items: center;
 }
 

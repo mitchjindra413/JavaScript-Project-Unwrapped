@@ -33,7 +33,7 @@ export async function recieveRequest(){
             total_data[`tracks_${time}`] = data.items
         } catch(err) {  
             console.log('hi')
-            alert('You have successfully signed in but are not yet preapproved. For demonstration purposes, sample data has been filled in place of your personal data.')
+            alert('You have successfully signed in but are not yet preapproved. For demonstration purposes, sample data has been filled in place of your personal data. To see your personal data, please message the creator on LinkedIn.')
             return sessionStorage.setItem('total_data', Listener.exampledata())
         }
 

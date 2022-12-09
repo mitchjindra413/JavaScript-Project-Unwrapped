@@ -80,7 +80,7 @@ export class Slides {
         artist.innerHTML = queryResults[0]
 
         let song = document.querySelector('#obscure-song')
-        song.innerHTML = queryResults[3] + ' - ' + queryResults[4]
+        song.innerHTML = queryResults[3]
 
     }
 }
