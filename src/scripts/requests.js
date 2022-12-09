@@ -32,7 +32,7 @@ export async function recieveRequest(){
             const data = await response.json()
             total_data[`tracks_${time}`] = data.items
         } catch(err) {  
-            console.log('hi')
+
             alert('You have successfully signed in but are not yet preapproved. For demonstration purposes, sample data has been filled in place of your personal data. To see your personal data, please message the creator on LinkedIn.')
             return sessionStorage.setItem('total_data', Listener.exampledata())
         }
@@ -52,7 +52,7 @@ export async function recieveRequest(){
 
     
     const tds = JSON.stringify(total_data)
-    console.log('hi')
+    
     sessionStorage.setItem('total_data', tds);
     return total_data;
 }
