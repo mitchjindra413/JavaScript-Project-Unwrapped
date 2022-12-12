@@ -13,10 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         Listener.setup()
         Listener.demoButtonListener()
     } else {
-        
-        if (sessionStorage.getItem('total_data') === null) {
-            recieveRequest();
-        }
+        recieveRequest();
         
         Listener.redirected();
     }
