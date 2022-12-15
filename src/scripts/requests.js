@@ -28,10 +28,10 @@ export async function recieveRequest(){
                     'Authorization': 'Bearer ' + token
                 }
             })
-            if(!response.items){
+            const data = await response.json()
+            if(!data.items){
                 throw new Error('Not preapproved')
             }
-            const data = await response.json()
             total_data[`tracks_${time}`] = data.items
         } catch(err) {  
 
