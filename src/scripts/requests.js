@@ -15,7 +15,7 @@ function generateRequestUrl(type, length, time) {
 // https://api.spotify.com/v1/me/top/song?limit=50&time_range=long_term
 
 export async function recieveRequest(){
-    debugger
+    
     const total_data = {};
     let length = ['short_term', 'medium_term', 'long_term']
     for(let time of length) {
@@ -28,7 +28,9 @@ export async function recieveRequest(){
                     'Authorization': 'Bearer ' + token
                 }
             })
-
+            if(!response.items){
+                throw new Error('Not preapproved')
+            }
             const data = await response.json()
             total_data[`tracks_${time}`] = data.items
         } catch(err) {  
